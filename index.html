@@ -4,48 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Centered Responsive Image Grid</title>
-    <style>
-      /* Center the entire website content */
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      /* Create a grid container */
-      .image-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
-        gap: 10px; /* Adjust the gap between images */
-      }
-
-      /* For medium screens, change to 3 columns */
-      @media (max-width: 768px) {
-        .image-grid {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-
-      /* For small screens, change to 1 column */
-      @media (max-width: 480px) {
-        .image-grid {
-          grid-template-columns: repeat(1, 1fr);
-        }
-      }
-
-      /* Style for images within the grid */
-      .image-grid img {
-        width: 100%;
-        height: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="image-grid">
-      <img src="image1.jpg" alt="Image 1" />
-      <img src="image2.jpg" alt="Image 2" />
-      <img src="image3.jpg" alt="Image 3" />
-      <img src="image3.jpg" alt="Image 3" />
+    <div>
+      <nav class="header">
+        <h1 class="attend">We Attended Git + Github 1.0</h1>
+      </nav>
+      <div class="container">
+        <div class="image-grid">
+          <img src="./assets/kirtan.jpg" alt="Image 2" class="img" />
+          <img src="./assets/kirtan 111.png" alt="Image 3" class="img" />
+          <img src="./assets/IMG_0679.jpg" alt="Image 3" class="img" />
+          <img src="./assets//kirtan.jpg" alt="Image 3" class="img" />
+        </div>
+      </div>
     </div>
   </body>
 </html>

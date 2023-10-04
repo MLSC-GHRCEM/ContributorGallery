@@ -1,105 +1,41 @@
-body{
-    background-color: #EEEDED;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#main-head{
-    text-align: center;  
-    font-size: 40px;
-   
-}
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#mlscimg{
-    width: 55px ;
-    height: 50px;
-   
+.attend {
+  text-align: center;
 }
 
-#heading{
-    text-align: center;  
-    font-size: 30px;
+.img {
+  border-radius: 50%;
+  width: 200px;
 }
 
-#team-heading{
-    text-align: center;  
-    font-size: 25px; 
-}
-
-#team {
-    margin-left: 90px;
-    padding-left: 95px;
-    padding-right: 95px;
-    display: grid;
-  }
-  
-  #team img {
-    width: 70% !important;
-    margin-bottom: 17px; /* to match column gap */
-  }
-  
-  #img {
-    border-radius: 50%;
-    display: inline-grid;
-  }
-  
-  .item1 {
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-
-
-  /*attendes*/
-  #attendes-heading{
-    text-align: center;  
-    font-size: 25px; 
-  }
-  #attendes{
-    text-align: center;  
-    font-size: 25px; 
-  }
-
-  #attendes {
-    margin-left: 90px;
-    padding-left: 95px;
-    padding-right: 95px;
-    display: grid;
-  }
-  
-  #attendes img {
-    width: 70% !important;
-    margin-bottom: 17px; /* to match column gap */
-  }
-  
-  #img {
-    border-radius: 50%;
-    display: inline-grid;
-  }
-  
-  #team {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
-    gap: 10px; /* Adjust the gap between images */
+/* Create a grid container */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  gap: 50px; /* Adjust the gap between images */
 }
 
 /* For medium screens, change to 3 columns */
 @media (max-width: 768px) {
-    #team {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .image-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* For small screens, change to 1 column */
 @media (max-width: 480px) {
-    #team {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .image-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-/* Style for images within the grid */
-.image-grid img {
-    width: 100%;
-    height: auto;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
