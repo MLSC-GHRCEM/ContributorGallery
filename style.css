@@ -1,37 +1,40 @@
-
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-background-color: #FEFF86;
-
+  background-image: url("../assets/background.svg");
+  font-family: monospace;
 }
+
 #main-head{
   text-align: center;  
   font-size: 40px;
-  color: #000000;
+  color: #ffffff;
 }
-.header{
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   
 }
+
 #mlscimg{
   width: 55px ;
   height: 50px;
 
 }
+
 #heading{
   text-align: center;  
   font-size: 30px;
-  color: #000000;
+  color: #ffffff;
 }
+
 #team-heading{
   text-align: center;  
   font-size: 25px; 
-  color: #000000;
+  color: #ffffff;
 }
 
 #attendes-heading{
@@ -40,27 +43,23 @@ background-color: #FEFF86;
   color: #000000;
 }
 
-
 .img {
   border-radius: 50%;
   width: 200px;
 }
 
-/* Create a grid container */
 .team {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
-  gap: 50px; /* Adjust the gap between images */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px; 
 }
 
-/* For medium screens, change to 3 columns */
 @media (max-width: 768px) {
   .team {
       grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* For small screens, change to 1 column */
 @media (max-width: 480px) {
   .team {
       grid-template-columns: repeat(1, 1fr);
@@ -75,18 +74,17 @@ background-color: #FEFF86;
 
 .attendes{
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
-  gap: 50px; /* Adjust the gap between images */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 50px; 
 }
 
-/* For medium screens, change to 3 columns */
 @media (max-width: 768px) {
   .attendes{
       grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* For small screens, change to 1 column */
+
 @media (max-width: 480px) {
   .attendes {
       grid-template-columns: repeat(1, 1fr);
