@@ -1,12 +1,45 @@
+
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+background-color: #FEFF86;
+
+}
+#main-head{
+  text-align: center;  
+  font-size: 40px;
+  color: #000000;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#mlscimg{
+  width: 55px ;
+  height: 50px;
+
+}
+#heading{
+  text-align: center;  
+  font-size: 30px;
+  color: #000000;
+}
+#team-heading{
+  text-align: center;  
+  font-size: 25px; 
+  color: #000000;
 }
 
-.attend {
-  text-align: center;
+#attendes-heading{
+  text-align: center;  
+  font-size: 25px; 
+  color: #000000;
 }
+
 
 .img {
   border-radius: 50%;
@@ -14,7 +47,7 @@ body {
 }
 
 /* Create a grid container */
-.image-grid {
+.team {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
   gap: 50px; /* Adjust the gap between images */
@@ -22,14 +55,14 @@ body {
 
 /* For medium screens, change to 3 columns */
 @media (max-width: 768px) {
-  .image-grid {
+  .team {
       grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* For small screens, change to 1 column */
 @media (max-width: 480px) {
-  .image-grid {
+  .team {
       grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -39,3 +72,24 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.attendes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  gap: 50px; /* Adjust the gap between images */
+}
+
+/* For medium screens, change to 3 columns */
+@media (max-width: 768px) {
+  .attendes{
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For small screens, change to 1 column */
+@media (max-width: 480px) {
+  .attendes {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
