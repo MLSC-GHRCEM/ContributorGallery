@@ -1,68 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Responsive Image Grid</title>
+    <style>
+      /* Center the entire website content */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ContributorGallery</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
+      /* Create a grid container */
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+        gap: 10px; /* Adjust the gap between images */
+      }
 
-<body>
-    <nav class="header">
-        <img id="mlscimg" src="./assets/mlsclogo.png" alt="MLSC-GHRCEM" srcset="" class="logo" />
-        <h1 id="main-head">MLSC GHRCEM</h1>
+      /* For medium screens, change to 3 columns */
+      @media (max-width: 768px) {
+        .image-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
 
-    </nav>
-    <div>
-        <div id="heading">
-            <h2>Git + Github</h2>
-        </div>
-        <h2 id="team-heading">Team Members</h2>
-        <div id="team">
-            <img src="./assets/mlsclogo.png" id="img" class="item1" />
-            <img src="./assets/mlsclogo.png" id="img" class="item1" />
-            <img src="./assets/mlsclogo.png" id="img" class="item1" />
-            <img src="./assets/mlsclogo.png" id="img" class="item1" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
+      /* For small screens, change to 1 column */
+      @media (max-width: 480px) {
+        .image-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
 
-        </div>
-        <h2 id="attendes-heading">Attendes</h2>
-        <div id="attendes">
-            <img src="./assets/profileE.png" id="img" class="item1" />
-            <img src="./assets/kirtan.jpg" id="img" class="item1" />
-            <img src="./assets/profileE.png" id="img" class="item1" />
-            <img src="./assets/profileE.png" id="img" class="item1" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-            <img src="./assets/profileE.png" id="img" />
-
-        </div>
-
-</body>
-
-</html>
-</body>
-
+      /* Style for images within the grid */
+      .image-grid img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-grid">
+      <img src="image1.jpg" alt="Image 1" />
+      <img src="image2.jpg" alt="Image 2" />
+      <img src="image3.jpg" alt="Image 3" />
+      <img src="image3.jpg" alt="Image 3" />
+    </div>
+  </body>
 </html>
