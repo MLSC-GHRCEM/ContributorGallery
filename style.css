@@ -40,7 +40,7 @@ body {
 #attendes-heading{
   text-align: center;  
   font-size: 25px; 
-  color: #000000;
+  color: #ffffff;
 }
 
 .img {
@@ -54,6 +54,24 @@ body {
   gap: 50px; 
 }
 
+.info{
+margin: 0;
+
+
+
+}
+.name{
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+.position{
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  margin: 0%;
+}
 @media (max-width: 768px) {
   .team {
       grid-template-columns: repeat(3, 1fr);
